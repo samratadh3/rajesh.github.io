@@ -1,0 +1,91 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    gap: 50px;
+}
+section>img{
+    height: 50px;
+}
+.details{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Contacts{
+    display: flex;
+    gap: 150px;
+}
+.Socials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Contacts:first-child,.Contacts:nth-child(2){
+    padding: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid var(--defbgcolor);
+}
+h4{
+    font-size: 17px;
+    color: var(--deftxtcolor2);
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
+    font-family: "Poppins";
+    width: 250px;
+}
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    padding: 5px;
+    color: white;
+    font-family: "Poppins";
+    width: 100px;
+}
+button:active{
+    background-color: #0C0C0C;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    color: white;
+    font-family: "Poppins";
+    width: 70px;
+}
+button:hover{
+    background-color: #0e0e0e ;
+}
+input:active,button:active{
+    border: none;
+}
+@media screen and (max-width:1000px) {
+    .details{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:480px) {
+    section{
+        gap: 50px;
+    }
+    .Contacts{
+        gap: 50px;
+    }
+}

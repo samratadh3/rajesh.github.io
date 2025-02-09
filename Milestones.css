@@ -1,0 +1,18 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+}
+section>img{
+    height: 50px;
+}
+
+section>.content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
